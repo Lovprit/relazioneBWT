@@ -1,4 +1,6 @@
-stringa = "banana"
+print("Inserisci una stringa:")
+stringa = input()
+
 print(stringa)
 stringa = stringa + "$"
 print(stringa)
@@ -25,6 +27,7 @@ for i in lista:
     print(i)
 
 print("-------------------------------")
+print("Compressione BWT")
 str_BWT = ""
 c = 0
 for i in lista:
