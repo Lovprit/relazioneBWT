@@ -7,7 +7,7 @@ IP = "127.0.0.1"
 PORTA = 5000
 
 with server:
-    server.bind(IP, PORTA)
+    server.bind((IP, PORTA))
 
     server.listen()
 
