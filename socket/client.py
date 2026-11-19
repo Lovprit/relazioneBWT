@@ -8,7 +8,7 @@ PORTA = 5000
 with client:
     client.connect((IP, PORTA))
 
-    messaggio = input("Inserisci un messaggio:")
+    messaggio = input("Inserisci un messaggio da codificare: ")
 
     client.sendall(messaggio.encode())
     

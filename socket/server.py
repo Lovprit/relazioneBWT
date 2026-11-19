@@ -10,14 +10,17 @@ with server:
     server.bind((IP, PORTA))
 
     server.listen()
+    print("Server in ascolto... ")
 
     conn, addr = server.accept()
 
     with conn:
 
-        messaggio = conn.recv(1024)
+        messaggio = conn.recv(1024).decode()    
+        print("Messaggio ricevuto...")
         print(messaggio)
+        print("Codifica...")
         messaggio = BWT(messaggio)
         print(messaggio)
 
-        conn.sendall(messaggio)
+        conn.sendall(messaggio.encode())

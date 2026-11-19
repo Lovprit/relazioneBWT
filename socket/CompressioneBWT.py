@@ -11,9 +11,6 @@ def BWT(stringa):
 
     lista.sort()
 
-    for i in lista:
-        print(i)
-
     print("Compressione BWT")
     str_BWT = ""
     c = 0
