@@ -1,4 +1,4 @@
-from CompressioneBWT import BWT
+from TrasformataBWT import BWT
 import socket as sck
 
 server = sck.socket(sck.AF_INET, sck.SOCK_STREAM)
@@ -24,3 +24,6 @@ with server:
         print(messaggio)
 
         conn.sendall(messaggio.encode())
+
+
+

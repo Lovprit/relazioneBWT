@@ -14,3 +14,5 @@ with client:
     
     risposta = client.recv(1024)
     print("Risposta del server:", risposta.decode())
+
+    
